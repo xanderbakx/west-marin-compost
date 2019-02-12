@@ -4,11 +4,15 @@ import React from "react"
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import { PageHeader } from '../utils'
+import dropOffImg from '../images/placeholder/ph3.jpg'
 
 const DropOffPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h3>Drop-off</h3>
+    <PageHeader img={dropOffImg}>
+      Drop Off
+    </PageHeader>
   </Layout>
 )
 
