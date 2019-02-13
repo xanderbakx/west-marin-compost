@@ -9,37 +9,37 @@ export default class NavbarLinks extends Component {
       {
         id: 0,
         path: '/',
-        name: 'home'
+        name: 'Home'
       },
       {
         id: 1,
         path: '/about',
-        name: 'about'
+        name: 'About'
       },
       {
         id: 2,
         path: '/products',
-        name: 'products'
+        name: 'Products'
       },
       {
         id: 3,
         path: '/drop-off',
-        name: 'drop-off'
+        name: 'Drop-off'
       },
       {
         id: 4,
         path: '/education',
-        name: 'education'
+        name: 'Education'
       },
       {
         id: 5,
         path: '/faq',
-        name: 'faq'
+        name: 'FAQ'
       },
       {
         id: 6,
         path: '/contact',
-        name: 'contact'
+        name: 'Contact'
       }
     ]
   }
@@ -72,7 +72,7 @@ const LinkWrapper = styled.ul`
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: ${styles.colors.mainGrey};
     font-weight: 700;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     cursor: pointer;
     ${styles.transDefault};
     &:hover {
