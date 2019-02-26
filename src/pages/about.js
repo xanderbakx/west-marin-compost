@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
 import aboutImg from '../images/placeholder/ph1.jpg'
+import AboutContent from "../components/AboutComponent/AboutContent";
 
 const AboutPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const AboutPage = () => (
     <PageHeader img={aboutImg}>
       <Banner title="About" subtitle="Learn about us"></Banner>
     </PageHeader>
+    <AboutContent />
   </Layout>
 )
 
