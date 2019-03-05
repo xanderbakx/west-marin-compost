@@ -19,6 +19,8 @@ Title.defaultProps = {
 
 const TitleWrapper = styled.div`
   text-align: center;
+  max-width: 992px;
+  margin: 2rem auto;
   .message {
     ${styles.textSlanted};
     ${styles.letterSpacing({ spacing: '0.3rem' })};
@@ -27,13 +29,21 @@ const TitleWrapper = styled.div`
   }
   .title {
     ${styles.letterSpacing({ spacing: '0.3rem' })};
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.5rem;
+    }
   }
   .underline {
-    width: 5rem;
+    width: 12rem;
     height: 0.2rem;
     background:${styles.colors.mainYellow};
     margin: 0.5rem auto;
   }
+
+  
 `
