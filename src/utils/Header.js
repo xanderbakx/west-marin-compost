@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from '../images/header/index-header.jpg'
+import img from '../images/index-header.jpg'
 
 function HomeHeader({ img, children }) {
   return (

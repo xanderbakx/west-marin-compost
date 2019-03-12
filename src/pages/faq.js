@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
 import faqImg from '../images/placeholder/ph5.jpg'
+import FaqContent from "../components/FaqComponent/FaqContent";
+
 
 const FaqPage = () => (
   <Layout>
@@ -13,6 +15,7 @@ const FaqPage = () => (
     <PageHeader img={faqImg}>
       <Banner title="FAQ" subtitle="Frequently asked questions"></Banner>
     </PageHeader>
+    <FaqContent />
   </Layout>
 )
 

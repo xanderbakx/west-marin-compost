@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
 import educationImg from '../images/placeholder/ph4.jpg'
+import EducationContent from "../components/EducationComponent/EducationContent";
+
 
 const EducationPage = () => (
   <Layout>
@@ -13,6 +15,7 @@ const EducationPage = () => (
     <PageHeader img={educationImg}>
       <Banner title="Education" subtitle="Get educated"></Banner>
     </PageHeader>
+    <EducationContent />
   </Layout>
 )
 
