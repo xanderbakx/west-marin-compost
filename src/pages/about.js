@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
-import aboutImg from '../images/placeholder/ph1.jpg'
+import aboutImg from '../images/dairy-barn.jpg'
 import AboutContent from "../components/AboutComponent/AboutContent";
 
 const AboutPage = () => (

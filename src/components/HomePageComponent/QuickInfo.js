@@ -4,14 +4,61 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { styles } from '../../utils'
 
+import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
+
 export default class QuickInfo extends Component {
   render() {
     return (
       <Section>
-        <Title message="let us tell you" title="our mission" />
+        <Title message="" title="" />
         <QuickInfoWrapper>
-          <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu luctus leo. Morbi auctor, diam nec iaculis rutrum, ipsum leo aliquam erat, eget tempus leo leo non erat. Vivamus enim sapien, volutpat eget iaculis eu, vehicula sed risus. Donec luctus, ante at laoreet pharetra, turpis justo pulvinar arcu, et hendrerit mi tellus in dolor. Suspendisse congue est in pharetra laoreet.          </p>
+          <StaticQuery
+            query={graphql`
+              query {
+                cdfa: file(relativePath: { eq: "cdfa-organic.png" }) {
+                  childImageSharp {
+                    fluid(maxWidth: 1600) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                    }
+                  }
+                }
+              }
+            `}
+            render={data => <Img style={{ maxWidth: 300, margin: '0 auto 1rem auto' }} fluid={data.cdfa.childImageSharp.fluid} />}
+          />
+          <h2>West Marin Compost is a public-private partnership between:</h2>
+          <ul>
+            <li>Lunny Grading and Paving, Inc.</li>
+            <li>Lafranchi Dairy</li>
+            <li>Marin County</li>
+          </ul>
+          <h2>Technical assistance from:</h2>
+          <ul>
+            <li>West Marin Compost Coalition</li>
+          </ul>
+          <h2>Administrative assistance from:</h2>
+          <ul>
+            <li>Marin Resource Conservation District (RCD)</li>
+          </ul>
+          <h2>Funding support from:</h2>
+          <ul>
+            <li>USDA Natural Resources Conservation</li>
+            <li>Service-Conservation Innovation Grant</li>
+            <li>Lunny Grading and Paving, Inc.</li>
+            <li>The Rathmann Family Fund</li>
+            <li>Redwood Empire</li>
+          </ul>
+          <h2>Organics Recycling: Good for the environment</h2>
+          <p className="text">Marin residents can drop-off yard debris at West Marin Compost To avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch is is a valuable, much needed soil amendment that creates healthy soils:</p>
+          <ul>
+            <li>Improve soil structure</li>
+            <li>Conserve water</li>
+            <li>Reduce erosion</li>
+            <li>Increase CEC (Cation Exchange Capacity)</li>
+            <li>Optimized nutrient management</li>
+            <li>Sequester carbon (carbon farming/gardening)</li>
+          </ul>
           <Link to="/about" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>About</SectionButton>
           </Link>
@@ -25,6 +72,28 @@ const QuickInfoWrapper = styled.div`
   width: 90%;
   margin: 2rem auto;
   max-width: 992px;
+  text-align: center;
+  h2 {
+    padding: 1rem 0;
+    color: ${styles.colors.mainBrown}
+  }
+  ul {
+    margin: 0 auto;
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  li {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  p {
+    text-align: left;
+  }
   .text {
     line-height: 2rem;
     color: ${styles.colors.mainGrey};

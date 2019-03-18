@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
-import contactImg from '../images/placeholder/ph6.jpg'
+import contactImg from '../images/machine.jpg'
 import ContactContent from "../components/ContactComponent/ContactContent";
 
 const ContactPage = () => (

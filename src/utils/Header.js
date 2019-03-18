@@ -28,6 +28,8 @@ const IndexHeader = styled.header`
 
 const DefaultHeader = styled(IndexHeader)`
   min-height:50vh;
+  background-position: top center;
+  background-size: contain;
 `
 
 HomeHeader.defaultProps = {

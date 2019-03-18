@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
-import faqImg from '../images/placeholder/ph5.jpg'
+import faqImg from '../images/compost-hand.jpg'
 import FaqContent from "../components/FaqComponent/FaqContent";
 
 

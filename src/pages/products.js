@@ -1,16 +1,18 @@
 import React from "react"
+// import ReactDOM from 'react-dom'
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
-import productsImg from '../images/placeholder/ph2.jpg'
+import productsImg from '../images/fog-compost.jpg'
 import CompostItem from '../components/ProductsComponent/CompostItem'
 import styled from 'styled-components'
 
 
 import { Accordion } from 'react-accessible-accordion'
-import 'react-accessible-accordion/dist/fancy-example.css'
+// import 'react-accessible-accordion/dist/fancy-example.css'
+import '../css/fancy-accordion.css'
 
 import { StaticQuery, graphql } from "gatsby"
 
@@ -218,6 +220,8 @@ const ProductsPage = () => (
     )}
   />
 )
+
+// ReactDOM.render(<ProductsPage />, document.querySelector('[data-mount]'));
 
 export default ProductsPage
 

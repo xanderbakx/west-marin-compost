@@ -2,19 +2,19 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
+import '../../css/fancy-accordion.css'
+
 import {
   AccordionItem,
   AccordionItemTitle,
   AccordionItemBody
 } from 'react-accessible-accordion'
-import 'react-accessible-accordion/dist/fancy-example.css'
-
-// import { Grid, Cell } from 'styled-css-grid'
+// import 'react-accessible-accordion/dist/fancy-example.css'
 
 const CompostItem = (({ image, name, description, price }) => (
   <section className='compostItem'>
 
-    <AccordionItem name="nicasio">
+    <AccordionItem>
       <AccordionItemTitle>
         <h3>{name}</h3>
       </AccordionItemTitle>
