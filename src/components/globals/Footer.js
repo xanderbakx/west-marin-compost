@@ -22,6 +22,7 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <div className="title">West Marin Compost</div>
+
         <div className="icons">
           {this.state.icons.map(item => (<a href={item.path} key={item.id} target="_blank" rel="noopener noreferrer">{item.icon}</a>))}
         </div>
@@ -45,7 +46,7 @@ const FooterWrapper = styled.footer`
     font-size: 1.3rem;
     ${styles.transition({})};
     &:hover {
-      color: ${styles.colors.mainYellow};
+      color: ${styles.colors.mainRed};
     }
   }
   .copyright {
@@ -57,11 +58,11 @@ const FooterWrapper = styled.footer`
   .title {
     text-align: center;
     width: 20rem;
-    color: ${styles.colors.mainYellow};
+    color: ${styles.colors.mainRed};
     text-transform: uppercase;
     padding: 0.3rem 1rem;
     margin: 0 auto 2rem auto;
     font-size: 1.5rem;
-    ${styles.border({ color: `${styles.colors.mainYellow}` })};
+    ${styles.border({ color: `${styles.colors.mainRed}` })};
   }
 `

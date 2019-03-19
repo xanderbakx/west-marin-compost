@@ -89,7 +89,7 @@ const QuickInfoWrapper = styled.div`
   li {
     font-size: 1.1rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
   p {
     text-align: left;

@@ -13,7 +13,7 @@ const FaqPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={faqImg}>
-      <Banner title="FAQ" subtitle="Frequently asked questions"></Banner>
+      <Banner title="FAQ" subtitle=""></Banner>
     </PageHeader>
     <FaqContent />
   </Layout>

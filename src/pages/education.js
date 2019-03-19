@@ -13,7 +13,7 @@ const EducationPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={educationImg}>
-      <Banner title="Education" subtitle="Get educated"></Banner>
+      <Banner title="Education" subtitle=""></Banner>
     </PageHeader>
     <EducationContent />
   </Layout>
