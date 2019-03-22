@@ -14,12 +14,12 @@ export default class EducationContent extends Component {
         <EducationContentWrapper>
           <h2 style={{ paddingTop: '2rem' }}>Carbon Farming</h2>
           <p className="text">Increasing organic matter in our soils helps building healthy soils:</p>
-          <ul>
-            <li>conserve water</li>
-            <li>reduce erosion</li>
-            <li>improve soil structure</li>
-            <li>diverse, abundant microbial population</li>
-            <li>optimized nutrient management</li>
+          <ul style={{ fontWeight: 700, padding: '1rem 0' }}>
+            <li>Conserve water</li>
+            <li>Reduce erosion</li>
+            <li>Improve soil structure</li>
+            <li>Diverse, abundant microbial population</li>
+            <li>Optimized nutrient management</li>
           </ul>
 
           <p className="text">Increased soil organic matter also takes CO2 from the atmosphere and sequesters it in the soil, therby helping to reverse climate change. Wise use of compost and mulches helps to carbon farm.</p>
@@ -49,7 +49,8 @@ export default class EducationContent extends Component {
                 }
               }
             `}
-            render={data => <Img style={{ margin: '0 auto 1rem auto' }} fluid={data.climate.childImageSharp.fluid} />}
+            render={data => <a href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf" target="_blank" rel="noopener noreferrer">
+              <Img style={{ margin: '0 auto 1rem auto' }} fluid={data.climate.childImageSharp.fluid} /></a>}
           />
 
           <Link to="/about" style={{ textDecoration: 'none' }}>

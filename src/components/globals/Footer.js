@@ -14,7 +14,7 @@ export default class Footer extends Component {
       {
         id: 1,
         icon: <FaFacebook className="icon facebook-icon" />,
-        path: `#`
+        path: `https://www.facebook.com/westmarincompost`
       }
     ]
   }

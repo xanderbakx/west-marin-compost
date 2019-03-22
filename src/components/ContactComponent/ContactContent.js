@@ -32,16 +32,22 @@ export default class ContactContent extends Component {
 
 const ContactContentWrapper = styled.div`
   width: 90%;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: 992px;
   .text {
     line-height: 2rem;
     color: ${styles.colors.mainGrey};
     word-spacing: 0.2rem;
   }
-  #map {
-    margin-left: auto;
-    margin-right: auto;
+  iframe {
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: 1rem auto;
+    border: 0;
+  }
+  p {
+    text-align: center;
   }
   @media (min-width: 768px) {
     width: 70%;

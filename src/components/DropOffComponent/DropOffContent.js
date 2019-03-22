@@ -19,9 +19,9 @@ export default class DropOffContent extends Component {
 
           <h3 style={{ paddingTop: '2rem' }}>Free drop-off to create defensible space</h3>
           <p className="text">This year mnore than any other year, havin a defensible space around your home will be on people's mind. Marin County has set two weekends where you can drop-off yard debris at no charge to you. The event is sponsored by the Marin County Fire Department. The dates are:</p>
-          <p className="text">June 9-10, 2019</p>
-          <p className="text">July 14-15, 2019</p>
-          <p className="text">Hours: 9am - 3:30pm</p>
+          <p className="text" style={{ fontWeight: 700 }}>June 9-10, 2019</p>
+          <p className="text" style={{ fontWeight: 700 }}>July 14-15, 2019</p>
+          <p className="text" style={{ fontWeight: 700 }}>Hours: 9am - 3:30pm</p>
 
           <h3 style={{ paddingTop: '2rem' }}>Drop-off fee</h3>
           <p className="text">The drop-off fee provides essential long-term support for the Project and is competitive with alternative green materials disposal options for West Marin residents, while reducing the time and fuel needed for trucking to east Marin disposal sites, or beyond.</p>
@@ -29,7 +29,7 @@ export default class DropOffContent extends Component {
           <p className="text">Only clean green material (yard debris and wood scraps) will be accepted at the drop off site.</p>
           <p className="text"><b>Tipping fee: </b>A tipping fee is charged for all materials delivered to the drop-off site. Each load will be measured to assess the volume.</p>
 
-          <div className="grid-container">
+          <div className="grid-container" style={{ padding: '1rem 0', fontWeight: 700 }}>
             <div>Green material</div>
             <div>$20/cubic yard</div>
             <div>Tree trunks</div>

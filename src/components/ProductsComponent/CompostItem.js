@@ -12,7 +12,7 @@ import {
 } from 'react-accessible-accordion'
 // import 'react-accessible-accordion/dist/fancy-example.css'
 
-const CompostItem = (({ image, name, description, price, bulk }) => (
+const CompostItem = (({ image, name, description, price }) => (
   <section className='compostItem'>
     <Accordion>
       <AccordionItem>
@@ -26,8 +26,7 @@ const CompostItem = (({ image, name, description, price, bulk }) => (
             </div>
             <div>
               <p>{description}</p>
-              <p style={{ paddingTop: '1rem', fontWeight: '700' }}>${price} yd<sup>3</sup></p>
-              <p>${bulk} yd<sup>3</sup></p>
+              <p style={{ paddingTop: '1rem', fontWeight: '700' }}>{price}</p>
             </div>
           </GridWrapper>
         </AccordionItemBody>

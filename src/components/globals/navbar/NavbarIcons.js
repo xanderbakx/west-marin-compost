@@ -9,7 +9,7 @@ export default class NavbarIcons extends Component {
       {
         id: 0,
         icon: <FaFacebook className="icon facebook-icon" />,
-        path: 'https://www.facebook.com'
+        path: 'https://www.facebook.com/westmarincompost'
       }
     ]
   }
