@@ -4,7 +4,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { PageHeader, Banner, styles } from '../utils'
+import { PageHeader, Banner, styles, Title } from '../utils'
 import productsImg from '../images/fog-compost.jpg'
 import CompostItem from '../components/ProductsComponent/CompostItem'
 import styled from 'styled-components'
@@ -119,12 +119,12 @@ const ProductsPage = () => (
   `} render={(data) => (
       <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        {/* <h1>{console.log(data)}</h1> */}
         <PageHeader img={productsImg}>
           <Banner title="Products" subtitle=""></Banner>
         </PageHeader>
-        <ProductsWrapper>
 
+        <ProductsWrapper>
+          <Title message="" title="Click on the compost items below to learn more" />
           <CompostItem
             image={data.nicasio}
             name="Nicasio Blend"
@@ -199,12 +199,12 @@ const ProductsPage = () => (
           <CompostItem
             image={data.compostBlends}
             name="Compost Blends"
-            description="You have specific needs for oyster shell, greens, and, worm castings, etc. to apply directly with your compost? West Marin Compost can make your custom blend. You may order the amendments from your supplier and have it delivered to West Marin Compost. A blending fee of $5.00 per finished yd3 applies, minimum blending fee $25.00."
+            description="You have specific needs for oyster shell, greens, and, worm castings, etc. to apply directly with your compost? West Marin Compost can make your custom blend. You may order the amendments from your supplier and have it delivered to West Marin Compost. A blending fee of $5.00 per finished cubic yards applies, minimum blending fee $25.00."
           />
           <CompostItem
             image={data.oysterShell}
             name="Marin Oyster Shell"
-            description="Oyster shell will help some clay soils in improving drainage.  It also helps neutralize soil pH. Oyster shell will enhance plant growth and make plants stronger."
+            description="Oyster shell will help some clay soils in improving drainage. It also helps neutralize soil pH. Oyster shell will enhance plant growth and make plants stronger."
             price="$200 per cubic yard"
           />
 
@@ -218,7 +218,6 @@ const ProductsPage = () => (
   />
 )
 
-// ReactDOM.render(<ProductsPage />, document.querySelector('[data-mount]'));
 
 export default ProductsPage
 
@@ -226,9 +225,16 @@ const ProductsWrapper = styled.div`
   width: 90%;
   margin: 2rem auto;
   max-width: 992px;
-  .text {
-    line-height: 2rem;
-    color: ${styles.colors.mainGrey};
-    word-spacing: 0.2rem;
+  h2 {
+    padding: 2rem 0 0.5rem 0;
+    color: ${styles.colors.mainBrown}
   }
+  p {
+    padding-bottom: 1rem;
+  }
+  .text {
+          line-height: 2rem;
+    color: ${styles.colors.mainGrey};
+        word-spacing: 0.2rem;
+      }
 `

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Section, Title, SectionButton } from '../../utils'
+import { Section, Title } from '../../utils'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import { styles } from '../../utils'
 import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
@@ -10,11 +9,11 @@ export default class EducationContent extends Component {
   render() {
     return (
       <Section>
-        <Title message="West Marin Compost hopes that you will visit our website regularly to find out about events, workshops, articles, and videos." title="" />
+        <Title message="" title="West Marin Compost hopes that you will visit our website regularly to find out about events, workshops, articles, and videos" />
         <EducationContentWrapper>
           <h2 style={{ paddingTop: '2rem' }}>Carbon Farming</h2>
           <p className="text">Increasing organic matter in our soils helps building healthy soils:</p>
-          <ul style={{ fontWeight: 700, padding: '1rem 0' }}>
+          <ul style={{ fontWeight: 600, padding: '1rem 0' }}>
             <li>Conserve water</li>
             <li>Reduce erosion</li>
             <li>Improve soil structure</li>
@@ -34,7 +33,7 @@ export default class EducationContent extends Component {
               border: 0
             }} title="Soil Story" width="560" height="315" src="https://www.youtube.com/embed/nvAoZ14cP7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
-          <h3 style={{ paddingTop: '2rem' }}>Getting started with carbon gardening</h3>
+          <h2>Getting started with carbon gardening</h2>
           <p className="text">We can also do our part of carbon sequestration in the backyard. The same principals apply. Here is an educational article that will get you going.</p>
 
           <StaticQuery
@@ -50,12 +49,8 @@ export default class EducationContent extends Component {
               }
             `}
             render={data => <a href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf" target="_blank" rel="noopener noreferrer">
-              <Img style={{ margin: '0 auto 1rem auto' }} fluid={data.climate.childImageSharp.fluid} /></a>}
+              <Img style={{ margin: '1rem auto 1rem auto' }} fluid={data.climate.childImageSharp.fluid} /></a>}
           />
-
-          <Link to="/about" style={{ textDecoration: 'none' }}>
-            <SectionButton style={{ margin: '2rem auto' }}>About</SectionButton>
-          </Link>
 
         </EducationContentWrapper>
       </Section>
@@ -69,6 +64,16 @@ const EducationContentWrapper = styled.div`
   max-width: 992px;
   ul {
     list-style-type: none;
+  }
+  li {
+    padding: 0.2rem 0;
+  }
+  h2 {
+    padding: 2rem 0 0.5rem 0;
+    color: ${styles.colors.mainBrown}
+  }
+  p {
+    padding-bottom: 1rem;
   }
   .text {
     line-height: 2rem;

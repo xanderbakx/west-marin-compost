@@ -8,7 +8,7 @@ export const colors = {
   mainRed: `#A63421`,
   mainGreen: `#69bd45`,
 }
-export const textSlanted = `font-family:'Caveat', cursive;`
+export const textSlanted = `font-family:cursive;`
 
 export const transDefault = 'transition:all 0.5s ease-in-out'
 export const transFunction = (

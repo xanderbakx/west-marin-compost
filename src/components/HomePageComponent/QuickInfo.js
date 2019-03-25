@@ -50,7 +50,7 @@ export default class QuickInfo extends Component {
             <li>Redwood Empire</li>
           </ul>
           <h2>Organics Recycling: Good for the environment</h2>
-          <p className="text">Marin residents can drop-off yard debris at West Marin Compost To avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch is is a valuable, much needed soil amendment that creates healthy soils:</p>
+          <p className="text">Marin residents can drop off yard debris at West Marin Compost To avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch is is a valuable, much needed soil amendment that creates healthy soils:</p>
           <ul>
             <li>Improve soil structure</li>
             <li>Conserve water</li>

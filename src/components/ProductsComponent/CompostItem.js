@@ -18,6 +18,7 @@ const CompostItem = (({ image, name, description, price }) => (
       <AccordionItem>
         <AccordionItemTitle>
           <h3>{name}</h3>
+          <div className="accordion__arrow" role="presentation" />
         </AccordionItemTitle>
         <AccordionItemBody>
           <GridWrapper>
