@@ -43,7 +43,7 @@ const IconWrapper = styled.div`
   display: none;
   @media (min-width: 768px) {
     display: flex;
-    width: 10rem;
+    width: 4rem;
     justify-content: space-around;
   }
 `

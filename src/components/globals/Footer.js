@@ -9,7 +9,7 @@ export default class Footer extends Component {
       {
         id: 0,
         icon: <FaEnvelope className="icon envelope-icon" />,
-        path: `#`
+        path: `mailto:nancy@westmarincompost.com`
       },
       {
         id: 1,

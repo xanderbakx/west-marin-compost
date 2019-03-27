@@ -210,8 +210,8 @@ const ProductsPage = () => (
 
           <h2 style={{ paddingTop: '1.5rem' }}>Product Disclaimer</h2>
           <p className="text">Our current products are very clean. However, they are recycled materials, not virgin feestocks. Very small pieces of non-organics may be found.</p>
-          <h2 style={{ paddingTop: '1.5rem' }}>Cancelation/Refund Policy</h2>
-          <p className="text">After you place an order you can always cancel at no cost as long as your delivery has not started yet. You will not be billed. Please cancel your orders no later than 2 hours before your scheduled delivery. Sonoma Compost strivesto have happy customers. If you are not satisfied please let us know. If the wrong product has been delivered, we will gladly replace the order with the right product. If our product did not perform as it should we will replace it or give you a refund. Wewill always evaluate the propblem you report and do our best to find a solution.</p>
+          <h2 style={{ paddingTop: '1.5rem' }}>Cancellation/Refund Policy</h2>
+          <p className="text">After you place an order you can always cancel at no cost as long as your delivery has not started yet. You will not be billed. Please cancel your orders no later than 2 hours before your scheduled delivery. West Marin Compost strives to have happy customers. If you are not satisfied please let us know. If the wrong product has been delivered, we will gladly replace the order with the right product. If our product did not perform as it should we will replace it or give you a refund. We will always evaluate the problem you report and do our best to find a solution.</p>
         </ProductsWrapper>
       </Layout>
     )}

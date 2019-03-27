@@ -26,7 +26,8 @@ const BannerWrapper = styled.div`
     ${styles.textSlanted};
     ${styles.letterSpacing({ spacing: '0.15rem' })};
     font-size: 1.5rem;
-    text-transform: capitalize;
+    margin: 0 5rem;
+    /* text-transform: capitalize; */
   }
 `
 

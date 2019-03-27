@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Section, Title, SectionButton } from '../../utils'
+import { Section, SectionButton } from '../../utils'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { styles } from '../../utils'
@@ -11,7 +11,6 @@ export default class QuickInfo extends Component {
   render() {
     return (
       <Section>
-        <Title message="" title="" />
         <QuickInfoWrapper>
           <StaticQuery
             query={graphql`
