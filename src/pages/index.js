@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { HomeHeader, Banner, BannerButton } from '../utils'
 import QuickInfo from '../components/HomePageComponent/QuickInfo'
+// import { Helmet } from 'react-helmet'
 
 // import { StaticQuery, graphql } from "gatsby"
 
