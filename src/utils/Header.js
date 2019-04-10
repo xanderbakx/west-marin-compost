@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../images/index-header.jpg'
-
+// import Img from "gatsby-image"
 
 function HomeHeader({ img, children }) {
   return (
@@ -21,7 +21,7 @@ function PageHeader({ img, children }) {
 
 const IndexHeader = styled.header`
   min-height: calc(100vh - 55.77px);
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${props => props.img}) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${props => props.img}) center/cover fixed no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4,12 +4,12 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from '../utils'
-import aboutImg from '../images/piles.jpg'
+import aboutImg from '../images/fog-compost.jpg'
 import AboutContent from "../components/AboutComponent/AboutContent";
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={aboutImg}>
       <Banner title="About" subtitle=""></Banner>
     </PageHeader>
@@ -17,4 +17,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export default AboutPage;

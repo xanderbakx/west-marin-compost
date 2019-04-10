@@ -8,6 +8,7 @@ import QuickInfo from '../components/HomePageComponent/QuickInfo'
 // import { Helmet } from 'react-helmet'
 
 // import { StaticQuery, graphql } from "gatsby"
+import { FaChevronDown } from 'react-icons/fa'
 
 const IndexPage = () => (
 
@@ -19,6 +20,7 @@ const IndexPage = () => (
           <BannerButton style={{ margin: '2rem auto' }}>Products</BannerButton>
         </Link>
       </Banner>
+      {/* <FaChevronDown style={{ display: 'block', fontSize: '3rem', color: '#fff', position: 'fixed', bottom: '0px' }} /> */}
     </HomeHeader>
     <QuickInfo />
   </Layout>

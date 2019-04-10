@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { styles } from '../../utils'
-import { FaEnvelope, FaFacebook } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 export default class Footer extends Component {
   state = {
@@ -22,9 +22,12 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <div className="title">West Marin Compost</div>
-
         <div className="icons">
           {this.state.icons.map(item => (<a href={item.path} key={item.id} target="_blank" rel="noopener noreferrer">{item.icon}</a>))}
+        </div>
+        <div>
+          <p className="text"><FaPhone style={{ marginRight: '1rem' }} />(415) 662-9849</p>
+          <p style={{ marginBottom: '3rem' }} className="text"><FaMapMarkerAlt style={{ marginRight: '1rem' }} />5575 Nicasio Valley Rd. Nicasio, CA 94946</p>
         </div>
         <p className="copyright">Copyright &copy; {new Date().getFullYear()} West Marin Compost</p>
       </FooterWrapper>
@@ -50,6 +53,12 @@ const FooterWrapper = styled.footer`
     }
   }
   .copyright {
+    color: ${styles.colors.mainGrey};
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0 0 0;
+  }
+  .text {
     color: ${styles.colors.mainWhite};
     text-transform: capitalize;
     text-align: center;

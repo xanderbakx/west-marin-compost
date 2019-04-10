@@ -5,7 +5,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner, styles, Title } from '../utils'
-import productsImg from '../images/fog-compost.jpg'
+import productsImg from '../images/piles.jpg'
 import CompostItem from '../components/ProductsComponent/CompostItem'
 import styled from 'styled-components'
 
@@ -118,7 +118,7 @@ const ProductsPage = () => (
       }
   `} render={(data) => (
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Products" keywords={[`gatsby`, `application`, `react`]} />
         <PageHeader img={productsImg}>
           <Banner title="Products" subtitle=""></Banner>
         </PageHeader>

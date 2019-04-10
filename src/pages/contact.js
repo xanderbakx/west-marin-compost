@@ -10,7 +10,7 @@ import ContactContent from "../components/ContactComponent/ContactContent";
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={contactImg}>
       <Banner title="Contact" subtitle=""></Banner>
     </PageHeader>

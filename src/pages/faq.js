@@ -11,7 +11,7 @@ import FaqContent from "../components/FaqComponent/FaqContent";
 
 const FaqPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="FAQ" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={faqImg}>
       <Banner title="FAQ" subtitle=""></Banner>
     </PageHeader>

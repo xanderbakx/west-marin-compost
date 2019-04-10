@@ -49,7 +49,7 @@ export default class EducationContent extends Component {
               }
             `}
             render={data => <a href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf" target="_blank" rel="noopener noreferrer">
-              <Img style={{ margin: '1rem auto 1rem auto' }} fluid={data.climate.childImageSharp.fluid} /></a>}
+              <Img id="gardener" style={{ margin: '1rem auto 1rem auto', border: '2px solid lightgrey', width: '75%' }} fluid={data.climate.childImageSharp.fluid} /></a>}
           />
 
         </EducationContentWrapper>
@@ -74,6 +74,10 @@ const EducationContentWrapper = styled.div`
   }
   p {
     padding-bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: ${styles.colors.mainBrown}
   }
   .text {
     line-height: 2rem;

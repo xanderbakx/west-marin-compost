@@ -11,7 +11,7 @@ import EducationContent from "../components/EducationComponent/EducationContent"
 
 const EducationPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Education" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={educationImg}>
       <Banner title="Education" subtitle=""></Banner>
     </PageHeader>

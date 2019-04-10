@@ -10,7 +10,7 @@ import DropOffContent from "../components/DropOffComponent/DropOffContent";
 
 const DropOffPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Drop Off" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={dropOffImg}>
       <Banner title="Drop Off" subtitle=""></Banner>
     </PageHeader>
