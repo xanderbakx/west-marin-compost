@@ -9,9 +9,8 @@ import productsImg from '../images/piles.jpg'
 import CompostItem from '../components/ProductsComponent/CompostItem'
 import styled from 'styled-components'
 
-// import 'react-accessible-accordion/dist/fancy-example.css'
-
 import { StaticQuery, graphql } from "gatsby"
+
 
 const ProductsPage = () => (
   <StaticQuery query={graphql`
@@ -121,6 +120,7 @@ const ProductsPage = () => (
         <SEO title="Products" keywords={[`gatsby`, `application`, `react`]} />
         <PageHeader img={productsImg}>
           <Banner title="Products" subtitle=""></Banner>
+          {/* <FaChevronDown style={{ fontSize: '3rem', color: '#fff', position: 'absolute', bottom: 0 }} /> */}
         </PageHeader>
 
         <ProductsWrapper>

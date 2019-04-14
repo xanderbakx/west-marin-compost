@@ -8,7 +8,6 @@ import { PageHeader, Banner } from '../utils'
 import educationImg from '../images/night-compost.png'
 import EducationContent from "../components/EducationComponent/EducationContent";
 
-
 const EducationPage = () => (
   <Layout>
     <SEO title="Education" keywords={[`gatsby`, `application`, `react`]} />

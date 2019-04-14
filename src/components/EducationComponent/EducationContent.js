@@ -34,7 +34,7 @@ export default class EducationContent extends Component {
             }} title="Soil Story" width="560" height="315" src="https://www.youtube.com/embed/nvAoZ14cP7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
           <h2>Getting started with carbon gardening</h2>
-          <p className="text">We can also do our part of carbon sequestration in the backyard. The same principals apply. Here is an educational article that will get you going.</p>
+          <p className="text">We can also do our part of carbon sequestration in the backyard. The same principals apply. <a href="http://www.igrowsonoma.org/wp-content/uploads/2015/09/climate-friendly-gardener-ucs.pdf" target="_blank" rel="noopener noreferrer">Here</a> is an educational article that will get you going.</p>
 
           <StaticQuery
             query={graphql`

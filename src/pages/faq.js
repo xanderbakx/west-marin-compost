@@ -8,7 +8,6 @@ import { PageHeader, Banner } from '../utils'
 import faqImg from '../images/compost-hand.jpg'
 import FaqContent from "../components/FaqComponent/FaqContent";
 
-
 const FaqPage = () => (
   <Layout>
     <SEO title="FAQ" keywords={[`gatsby`, `application`, `react`]} />

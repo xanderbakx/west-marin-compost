@@ -17,7 +17,7 @@ const BannerWrapper = styled.div`
   text-align: center;
   .title {
     color: ${styles.colors.mainWhite};
-    font-size: 3rem;
+    font-size: 2.6rem;
     text-transform: uppercase;
     ${styles.letterSpacing({ spacing: '0.75rem' })}
   }

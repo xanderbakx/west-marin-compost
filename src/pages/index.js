@@ -20,7 +20,7 @@ const IndexPage = () => (
           <BannerButton style={{ margin: '2rem auto' }}>Products</BannerButton>
         </Link>
       </Banner>
-      {/* <FaChevronDown style={{ display: 'block', fontSize: '3rem', color: '#fff', position: 'fixed', bottom: '0px' }} /> */}
+      <FaChevronDown style={{ fontSize: '3rem', color: '#fff', position: 'absolute', bottom: 0 }} />
     </HomeHeader>
     <QuickInfo />
   </Layout>

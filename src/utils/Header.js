@@ -29,7 +29,8 @@ const IndexHeader = styled.header`
 
 const DefaultHeader = styled(IndexHeader)`
   /* min-height:50vh; */
-  min-height: calc(100vh - 55.77px);
+  /* min-height: calc(100vh - 55.77px); */
+  min-height: 78vh;
 `
 
 HomeHeader.defaultProps = {

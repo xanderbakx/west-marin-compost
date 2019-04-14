@@ -5,9 +5,6 @@ import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/globals/navbar/Navbar'
 import Footer from '../components/globals/Footer'
 
-// import "./layout.css"
-// import "../sass/layout.scss"
-
 const Layout = ({ children }) => {
   return <React.Fragment>
     <GlobalStyle />
