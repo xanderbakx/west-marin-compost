@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: [],
+  keywords: [`compost`, `mulch`, `soil amendments`, `soil`, `healthy soil`, `carbon farming`, `yard waste`, `organics`, `yard debris`, `manure`, `organic`, `farming`, `gardening`, `landscaping`, `landscape supply`, `agricultural supply`, `agriculture`, `vineyards`, `grape growers`, `landscapers`, `farmers`, `sustainable`, `regenerative`, `CDFA`, `certified organic`, `recycling`, `Marin`, `Sonoma`, `Bay Area`, `erosion`, `erosion control`, `weed control`, `fertilizer`, `water conservation`, `MWELO`, `CCOF`, `OMRI`, `vineyard mulch`, `mallard plus`, `nicasio blend`, `hi-test compost`],
 }
 
 SEO.propTypes = {

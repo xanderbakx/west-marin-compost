@@ -14,7 +14,7 @@ const IndexPage = () => (
 
   <Layout>
     <HomeHeader>
-      <SEO title="Home" keywords={[`compost`, `west`, `marin`, `agriculture`, `farm`, `vineyard`, `mulch`]} />
+      <SEO title="Home" keywords={[`compost`, `mulch`, `soil amendments`, `soil`, `healthy soil`, `carbon farming`, `yard waste`, `organics`, `yard debris`, `manure`, `organic`, `farming`, `gardening`, `landscaping`, `landscape supply`, `agricultural supply`, `agriculture`, `vineyards`, `grape growers`, `landscapers`, `farmers`, `sustainable`, `regenerative`, `CDFA`, `certified organic`, `recycling`, `Marin`, `Sonoma`, `Bay Area`, `erosion`, `erosion control`, `weed control`, `fertilizer`, `water conservation`, `MWELO`, `CCOF`, `OMRI`, `vineyard mulch`, `mallard plus`, `nicasio blend`, `hi-test compost`]} />
       <Banner title="West Marin Compost" subtitle="5575 Nicasio Valley Rd, Nicasio, CA 94946">
         <Link to="/products" style={{ textDecoration: 'none' }}>
           <BannerButton style={{ margin: '2rem auto' }}>Products</BannerButton>
