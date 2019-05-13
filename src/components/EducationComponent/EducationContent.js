@@ -21,7 +21,7 @@ export default class EducationContent extends Component {
             <li>Optimized nutrient management</li>
           </ul>
 
-          <p className="text">Increased soil organic matter also takes CO2 from the atmosphere and sequesters it in the soil, therby helping to reverse climate change. Wise use of compost and mulches helps to carbon farm.</p>
+          <p className="text">Increased soil organic matter also takes CO2 from the atmosphere and sequesters it in the soil, thereby helping to reverse climate change. Wise use of compost and mulches helps to carbon farm.</p>
           <p className="text">Carbon farming found its roots right here in Marin County through the <a href="https://www.marincarbonproject.org" target="_blank" rel="noopener noreferrer">Marin Carbon Project</a></p>
           <div style={{ margin: '1rem 0', position: 'relative', overflow: 'hidden', paddingTop: '56.25%' }}>
             <iframe style={{

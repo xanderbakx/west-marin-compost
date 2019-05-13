@@ -129,19 +129,19 @@ const ProductsPage = () => (
             image={data.nicasio}
             name="Nicasio Blend"
             description="This dark, rich, premium quality compost is made from recycled yard trimmings, dairy manure and horse manure. Nicasio Blend is recommended for applications that do not require high nitrogen content such as trees, shrubs, grape vines and natives. It provides valuable organic matter to soil, making it easier to work and more productive. In sandy soil it increases moisture-holding capacity, making soil nutrients more available to plants. In heavy clay soils, porosity is increased which improves aeration in the root zone and overall drainage."
-            price="$20.00 per cubic yard (20+: $18.00 per cubic yard)"
+            price="$20 per cubic yard"
           />
           <CompostItem
             image={data.hiTest}
             name="Marin Hi-Test Compost"
-            description="All the benefits of Nicasio Blend but with higher nitrogen content from the inclusion of High-N Manure such as goat and chicken. Hi-Test Compostis great for new gardens and landscapes, especially where soils have been neglected or overworked. In addition to improving soil structure, our Hi-Test Compost will give new plants the nitrogen needed for a vibrant start."
+            description="All the benefits of Nicasio Blend but with higher nitrogen content from the inclusion of High-N Manure such as goat and chicken. Hi-Test Compost is great for new gardens and landscapes, especially where soils have been neglected or overworked. In addition to improving soil structure, our Hi-Test Compost will give new plants the nitrogen needed for a vibrant start."
             price="$32.50 per cubic yard"
           />
           <CompostItem
             image={data.mallardPlus}
             name="Marin Mallard Plus"
-            description="All the benefits of Hi-Test Compost, but designed for use in poorly drained soils Mallard Plusis great for clay soilsand raised beds."
-            price="$34.00 per cubic yard"
+            description="All the benefits of Hi-Test Compost, but designed for use in poorly drained soils Mallard Plus is great for clay soils and raised beds."
+            price="$34 per cubic yard"
           />
           <CompostItem
             image={data.livingBiochar}
@@ -151,20 +151,20 @@ const ProductsPage = () => (
           <CompostItem
             image={data.vineyardMulch}
             name="Marin Vineyard Mulch"
-            description="An affordable, organic alternative to expensive bark products. It suppresses weeds, conserves moisture, moderates soil temperatures, improves soil structure and controls erosion. Vineyard Mulch undergoes a brief composting process at over 131°F that renders it virtually free of weed seeds and plant pathogens. As it slowly breaks down, it provides the organic matter, nutrients and microbes that help plants thrive.Wormsthrive in soils that have a generous layer of Vineyard Mulch. Their tunneling activities allow oxygen to get to plant roots and their castings provide a beneficial nutrient input. Does not float."
-            price="$18.00 per cubic yard (20+: $16.00 per cubic yard)"
+            description="An affordable, organic alternative to expensive bark products. It suppresses weeds, conserves moisture, moderates soil temperatures, improves soil structure and controls erosion. Vineyard Mulch undergoes a brief composting process at over 131°F that renders it virtually free of weed seeds and plant pathogens. As it slowly breaks down, it provides the organic matter, nutrients and microbes that help plants thrive. Worms thrive in soils that have a generous layer of Vineyard Mulch. Their tunneling activities allow oxygen to get to plant roots and their castings provide a beneficial nutrient input. Does not float."
+            price="$18 per cubic yard"
           />
           <CompostItem
             image={data.ultraLight}
             name="Ultra-Light Mulch"
             description="The hybrid mulch that has qualities of both compost and mulch will finish off any landscape just perfectly. Like any other mulch it stays on the surface of the soil and is not incorporated into the soil. While the mulch will initially act as a weed suppressant, as it breaks down it will help feed your soil. As the name implies, this mulch is lightweight and easy to work with. Landscapers specify Ultra-Light Mulch when a neat appearance or distinctive border is desired. Not recommended in windy areas."
-            price="$15 per cubic yard"
+            price="$15 per cubic yard (20+: $13 per cubic yard)"
           />
           <CompostItem
             image={data.treeMulch}
             name="Tree Mulch"
             description="It is derived from tree stumps and logs. Tree mulch provides the same overall benefits to the soil as the Vineyard Mulch. Due to its woodier nature it will last longer, but provide less nutrients. Offered screened Medium (<1.5”) or coarse (>1.5”)."
-            price="$15 per cubic yard"
+            price="$15 per cubic yard (20+: $13 per cubic yard)"
           />
           <CompostItem
             image={data.chunkyMulch}
@@ -176,7 +176,7 @@ const ProductsPage = () => (
             image={data.pathMulch}
             name="Marin Path Mulch"
             description="The economic, environment friendly substitute for expensive landscape barks. Made from recycled wood that’s ground and screened, Path Mulch is long-lasting walk-on mulch that will suppress weeds, conserve moisture and keep dirt and mud out of your house. It has a texture and color that work well with vivid garden colors. Landscapers specify Path Mulch when a neat appearance or distinctive border is desired."
-            price="$10 per cubic yard"
+            price="$10 per cubic yard (20+: $9 per cubic yard)"
           />
           <CompostItem
             image={data.deckMix}
