@@ -9,6 +9,8 @@ export default class ContactContent extends Component {
   render() {
     return (
       <Section>
+        <h3 style={{ marginBottom: '2rem', textAlign: 'center' }}>We will be closed Memorial Day and July 4</h3>
+
         <Title message="" title="West Marin Compost welcomes your inquiries and comments" />
         <ContactContentWrapper>
           <div class="map">

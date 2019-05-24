@@ -123,7 +123,10 @@ const ProductsPage = () => (
           {/* <FaChevronDown style={{ fontSize: '3rem', color: '#fff', position: 'absolute', bottom: 0 }} /> */}
         </PageHeader>
 
+
         <ProductsWrapper>
+          <h3 style={{ marginBottom: '2rem', textAlign: 'center' }}>We will be closed Memorial Day and July 4</h3>
+
           <Title message="" title="Click on the compost items below to learn more" />
           <CompostItem
             image={data.nicasio}

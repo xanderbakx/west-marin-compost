@@ -19,8 +19,8 @@ export default class DropOffContent extends Component {
 
           <h2>Free drop off to create defensible space</h2>
           <p className="text">This year more than any other year, having a defensible space around your home will be on people's mind. Marin County has set two weekends where you can drop off yard debris at no charge to you. The event is sponsored by the Marin County Fire Department and West Marin Compost. The dates are:</p>
-          <p className="text" style={{ fontWeight: 600 }}>June 9-10, 2019</p>
-          <p className="text" style={{ fontWeight: 600 }}>July 14-15, 2019</p>
+          <p className="text" style={{ fontWeight: 600 }}>June 8-9, 2019</p>
+          <p className="text" style={{ fontWeight: 600 }}>July 6-7, 2019</p>
           <p className="text" style={{ fontWeight: 600 }}>Hours: 9am - 3:30pm</p>
 
           <h2>Drop off fee</h2>
