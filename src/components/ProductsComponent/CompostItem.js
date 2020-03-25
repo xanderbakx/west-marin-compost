@@ -52,5 +52,4 @@ const GridWrapper = styled.div`
     grid-template-rows: 1fr;
     grid-template-areas: ". .";
   }
-
 `

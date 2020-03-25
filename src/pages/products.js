@@ -9,8 +9,20 @@ import productsImg from '../images/piles.jpg'
 import CompostItem from '../components/ProductsComponent/CompostItem'
 import styled from 'styled-components'
 
-import { StaticQuery, graphql } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
+import Table from '../images/table.png'
+
+import priceListEng from '../documents/WMC_Price_List_2020.pdf'
+import priceListSp from '../documents/WMC_Lista_de_Precios_2020.pdf'
+
+import { StaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
 
 const ProductsPage = () => (
   <StaticQuery query={graphql`
@@ -113,6 +125,13 @@ const ProductsPage = () => (
             }
           }
         }
+        table: file(relativePath: {eq: "table.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
 
       }
   `} render={(data) => (
@@ -121,11 +140,20 @@ const ProductsPage = () => (
         <PageHeader img={productsImg}>
           <Banner title="Products" subtitle=""></Banner>
           {/* <FaChevronDown style={{ fontSize: '3rem', color: '#fff', position: 'absolute', bottom: 0 }} /> */}
-        </PageHeader>
-
+        </PageHeader>       
 
         <ProductsWrapper>
-          <h3 style={{ marginBottom: '2rem', textAlign: 'center' }}>We will be closed Memorial Day and July 4</h3>
+          <p className="text">Please, browse this page to select the product that works best for your soil, your plants and you. You can refer to the table to estimate how much material you will need or you can use an <a id="calculator" href="https://www.savingwater.org/lawn-garden/soil-mulch-compost-fertilizers/compost-mulch-calculator/" target="_blank" rel="noopener noreferrer">online calculator</a> Of course, our knowledgeable staff is happy to assist you in deciding which product best suits your needs. <b>(415) 662-9849</b></p>
+
+          <Img src="data.table" style={{ maxWidth: 500, margin: '1rem auto 1.5rem auto' }} fluid={data.table.childImageSharp.fluid} />
+
+          <h4>As of April 1, 2020 our prices will increase as follows:</h4>
+          <p className="text"><b>Nicasio Blend:</b> $25 per cubic yard</p>
+
+          <div id="buttons">
+            <Button variant="secondary" style={{margin: "0 0.3rem"}}><a href={priceListEng} target="_blank" rel="noopener noreferrer">Get your PDF of our pricelist here</a></Button>
+            <Button variant="secondary" style={{margin: "0 0.3rem"}}><a href={priceListSp} target="_blank" rel="noopener noreferrer">Obtenga su PDF de nuestra lista de precios aquí</a></Button>
+          </div>
 
           <Title message="" title="Click on the compost items below to learn more" />
           <CompostItem
@@ -235,9 +263,26 @@ const ProductsWrapper = styled.div`
   p {
     padding-bottom: 1rem;
   }
+  a {
+    text-decoration: none;
+    color: ${styles.colors.mainWhite}
+  }
+  a:hover {
+    text-decoration: none;
+    color: ${styles.colors.mainWhite}
+  }
+  #calculator {
+    text-decoration: none;
+    color: ${styles.colors.mainBrown}
+  }
   .text {
           line-height: 2rem;
     color: ${styles.colors.mainGrey};
         word-spacing: 0.2rem;
       }
+  #buttons {
+    display:flex;
+    justify-content:center;
+    align-item:center;
+  }
 `

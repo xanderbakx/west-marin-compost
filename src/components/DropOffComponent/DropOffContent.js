@@ -17,13 +17,17 @@ export default class DropOffContent extends Component {
           <p className="text" style={{ fontWeight: 600 }}>5575 Nicasio Valley Rd, Nicasio, CA 94946</p>
           <p className="text" style={{ fontWeight: 600 }}>(415) 662-9849</p>
 
-          <h2>Free drop off to create defensible space</h2>
-          <p className="text">This year more than any other year, having a defensible space around your home will be on people's mind. Marin County has set two weekends where you can drop off yard debris at no charge to you. The event is sponsored by the Marin County Fire Department and West Marin Compost. The dates are:</p>
-          <p className="text" style={{ fontWeight: 600 }}>June 8-9, 2019</p>
-          <p className="text" style={{ fontWeight: 600 }}>July 6-7, 2019</p>
-          <p className="text" style={{ fontWeight: 600 }}>Hours: 9am - 3:30pm</p>
-
           <h2>Drop off fee</h2>
+          <h3 style={{paddingBottom: '0.5rem'}}>Price Increase</h3>
+          <h4 style={{paddingBottom: '0.5rem'}}>As of April 1, 2020 our prices will increase as follows:</h4>
+          <p id="tipping" className="text">Tipping fee for yard and wood debris: <b>$30.00/cy</b></p>
+          <ul style={{ fontWeight: 600, paddingBottom: '1rem' }}>
+            <li>This facility is not economically viable without a rate increase</li>
+            <li>We provide a local service and would like to continue to do so</li>
+            <li>The compost facility along Hwy 101 is higher than our new price</li>
+            <li>This facility was not set up to receive materials from the 101 corridor</li>
+          </ul>
+
           <p className="text">The drop off fee provides essential long-term support for the project and is competitive with alternative green materials disposal options for West Marin residents, while reducing the time and fuel needed for trucking to East Marin disposal sites, or beyond.</p>
           <p className="text"><b>Please note: </b>It is illegal to put toxins into the green can or dispose of them in any but an approved toxic waste facility. Each incoming load is inspected; contaminated loads are not accepted. If contaminants are found following off-loading, the driver will be required to immediately reload and remove the material from the site.</p>
           <p className="text">Only clean green material (yard debris and wood scraps) will be accepted at the drop off site.</p>
@@ -62,7 +66,10 @@ const DropOffContentWrapper = styled.div`
     color: ${styles.colors.mainBrown}
   }
   p {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  li {
+    padding: 0.2rem 0;
   }
   .text {
     line-height: 2rem;
