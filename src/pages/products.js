@@ -12,11 +12,10 @@ import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-
-import Table from '../images/table.png'
+// import Container from 'react-bootstrap/Container'
+// import Col from 'react-bootstrap/Col'
+// import Row from 'react-bootstrap/Row'
+// import Table from '../images/table.png'
 
 import priceListEng from '../documents/WMC_Price_List_2020.pdf'
 import priceListSp from '../documents/WMC_Lista_de_Precios_2020.pdf'
@@ -29,105 +28,105 @@ const ProductsPage = () => (
       {
         nicasio: file(relativePath: {eq: "nicasioBlend.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         hiTest: file(relativePath: {eq: "marinHiTest.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         mallardPlus: file(relativePath: {eq: "marinMallardPlus.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         livingBiochar: file(relativePath: {eq: "livingBiochar.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         vineyardMulch: file(relativePath: {eq: "marinVineyardMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         ultraLight: file(relativePath: {eq: "ultraLightMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         treeMulch: file(relativePath: {eq: "treeMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         chunkyMulch: file(relativePath: {eq: "chunkyMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         pathMulch: file(relativePath: {eq: "marinPathMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         deckMix: file(relativePath: {eq: "compostProducts.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         amendedSoil: file(relativePath: {eq: "amended.jpg"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         biochar: file(relativePath: {eq: "biochar.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         compostBlends: file(relativePath: {eq: "compostProducts.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         oysterShell: file(relativePath: {eq: "oysterShell.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         table: file(relativePath: {eq: "table.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -140,19 +139,19 @@ const ProductsPage = () => (
         <PageHeader img={productsImg}>
           <Banner title="Products" subtitle=""></Banner>
           {/* <FaChevronDown style={{ fontSize: '3rem', color: '#fff', position: 'absolute', bottom: 0 }} /> */}
-        </PageHeader>       
+        </PageHeader>
 
         <ProductsWrapper>
           <p className="text">Please, browse this page to select the product that works best for your soil, your plants and you. You can refer to the table to estimate how much material you will need or you can use an <a id="calculator" href="https://www.savingwater.org/lawn-garden/soil-mulch-compost-fertilizers/compost-mulch-calculator/" target="_blank" rel="noopener noreferrer">online calculator</a> Of course, our knowledgeable staff is happy to assist you in deciding which product best suits your needs. <b>(415) 662-9849</b></p>
 
-          <Img src="data.table" style={{ maxWidth: 500, margin: '1rem auto 1.5rem auto' }} fluid={data.table.childImageSharp.fluid} />
+          <Img src="data.table" style={{ maxWidth: 600, margin: '1rem auto 1.5rem auto' }} fluid={data.table.childImageSharp.fluid} />
 
           <h4>As of April 1, 2020 our prices will increase as follows:</h4>
           <p className="text"><b>Nicasio Blend:</b> $25 per cubic yard</p>
 
           <div id="buttons">
-            <Button variant="secondary" style={{margin: "0 0.3rem"}}><a href={priceListEng} target="_blank" rel="noopener noreferrer">Get your PDF of our pricelist here</a></Button>
-            <Button variant="secondary" style={{margin: "0 0.3rem"}}><a href={priceListSp} target="_blank" rel="noopener noreferrer">Obtenga su PDF de nuestra lista de precios aquí</a></Button>
+            <Button variant="secondary" style={{ margin: "0 0.3rem" }}><a href={priceListEng} target="_blank" rel="noopener noreferrer">Get your PDF of our pricelist here</a></Button>
+            <Button variant="secondary" style={{ margin: "0 0.3rem" }}><a href={priceListSp} target="_blank" rel="noopener noreferrer">Obtenga su PDF de nuestra lista de precios aquí</a></Button>
           </div>
 
           <Title message="" title="Click on the compost items below to learn more" />
@@ -160,7 +159,7 @@ const ProductsPage = () => (
             image={data.nicasio}
             name="Nicasio Blend"
             description="This dark, rich, premium quality compost is made from recycled yard trimmings, dairy manure and horse manure. Nicasio Blend is recommended for applications that do not require high nitrogen content such as trees, shrubs, grape vines and natives. It provides valuable organic matter to soil, making it easier to work and more productive. In sandy soil it increases moisture-holding capacity, making soil nutrients more available to plants. In heavy clay soils, porosity is increased which improves aeration in the root zone and overall drainage."
-            price="$20 per cubic yard"
+            price="$25 per cubic yard"
           />
           <CompostItem
             image={data.hiTest}

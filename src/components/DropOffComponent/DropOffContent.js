@@ -18,8 +18,8 @@ export default class DropOffContent extends Component {
           <p className="text" style={{ fontWeight: 600 }}>(415) 662-9849</p>
 
           <h2>Drop off fee</h2>
-          <h3 style={{paddingBottom: '0.5rem'}}>Price Increase</h3>
-          <h4 style={{paddingBottom: '0.5rem'}}>As of April 1, 2020 our prices will increase as follows:</h4>
+          <h3 style={{ paddingBottom: '0.5rem' }}>Price Increase</h3>
+          <h4 style={{ paddingBottom: '0.5rem' }}>As of April 1, 2020 our prices will increase as follows:</h4>
           <p id="tipping" className="text">Tipping fee for yard and wood debris: <b>$30.00/cy</b></p>
           <ul style={{ fontWeight: 600, paddingBottom: '1rem' }}>
             <li>This facility is not economically viable without a rate increase</li>
@@ -35,7 +35,7 @@ export default class DropOffContent extends Component {
 
           <div className="grid-container">
             <div className="grid-item">Green material</div>
-            <div className="grid-item">$20/cubic yard</div>
+            <div className="grid-item">$30/cubic yard</div>
             <div className="grid-item">Tree trunks</div>
             <div className="grid-item">$45/ton</div>
             <div className="grid-item">Tree stumps up to 1' diameter</div>
@@ -45,7 +45,7 @@ export default class DropOffContent extends Component {
             <div className="grid-item">Tree stumps up to 3' diameter</div>
             <div className="grid-item">$330 each</div>
             <div className="grid-item">Dimensional lumber/wood scraps</div>
-            <div className="grid-item">$20/cubic yard</div>
+            <div className="grid-item">$30/cubic yard</div>
           </div>
 
           <p className="text"><b>West Marin equestrian facilities: </b>West Marin Compost provides manure hauling services. We will place an empty dumpster for used bedding and manure. Full dumpsters are hauled and replaced by an empty one as needed. Please call us at (415) 662-9849 to set up your service and discuss fees.</p>
