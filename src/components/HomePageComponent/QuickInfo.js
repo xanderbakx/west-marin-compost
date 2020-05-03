@@ -12,6 +12,8 @@ export default class QuickInfo extends Component {
     return (
       <Section>
         <QuickInfoWrapper>
+
+
           <h2>Organics Recycling: Good for the environment</h2>
           <p className="text">Marin residents can drop off yard debris at West Marin Compost To avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch is is a valuable, much needed soil amendment that creates healthy soils:</p>
           <ul>
@@ -37,6 +39,21 @@ export default class QuickInfo extends Component {
             render={data => <Img style={{ maxWidth: 300, margin: '3rem auto 1rem auto' }} fluid={data.cdfa.childImageSharp.fluid} />}
           />
           <p style={{ textAlign: 'center', fontSize: '0.9rem' }}>Nicasio Blend is Organic.  More to follow soon.</p>
+          <hr />
+
+          <h3>Reuse your vegetable scraps at home and recycle. Take a walk through the West Marin Compost site to learn more about organics recycling.</h3>
+          <div style={{ margin: '1rem 0', position: 'relative', overflow: 'hidden', paddingTop: '56.25%' }}>
+            <iframe style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              border: 0
+            }} title="Soil Story" width="560" height="315" src="https://www.youtube.com/embed/XoNtu2SoAPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+          </div>
+          <hr />
+
           <h2 style={{ marginTop: '1rem' }}>West Marin Compost is a public-private partnership between:</h2>
           <ul>
             <li>Lunny Grading and Paving, Inc.</li>

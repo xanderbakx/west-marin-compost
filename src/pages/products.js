@@ -11,11 +11,6 @@ import styled from 'styled-components'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
-import Image from 'react-bootstrap/Image'
-// import Container from 'react-bootstrap/Container'
-// import Col from 'react-bootstrap/Col'
-// import Row from 'react-bootstrap/Row'
-// import Table from '../images/table.png'
 
 import priceListEng from '../documents/WMC_Price_List_2020.pdf'
 import priceListSp from '../documents/WMC_Lista_de_Precios_2020.pdf'
@@ -26,111 +21,112 @@ import Img from 'gatsby-image'
 const ProductsPage = () => (
   <StaticQuery query={graphql`
       {
+        table: file(relativePath: {eq: "table.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         nicasio: file(relativePath: {eq: "nicasioBlend.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         hiTest: file(relativePath: {eq: "marinHiTest.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         mallardPlus: file(relativePath: {eq: "marinMallardPlus.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         livingBiochar: file(relativePath: {eq: "livingBiochar.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         vineyardMulch: file(relativePath: {eq: "marinVineyardMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         ultraLight: file(relativePath: {eq: "ultraLightMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         treeMulch: file(relativePath: {eq: "treeMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         chunkyMulch: file(relativePath: {eq: "chunkyMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         pathMulch: file(relativePath: {eq: "marinPathMulch.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         deckMix: file(relativePath: {eq: "compostProducts.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         amendedSoil: file(relativePath: {eq: "amended.jpg"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         biochar: file(relativePath: {eq: "biochar.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         compostBlends: file(relativePath: {eq: "compostProducts.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         oysterShell: file(relativePath: {eq: "oysterShell.png"}) {
           childImageSharp {
-            fluid(maxWidth: 1000) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        table: file(relativePath: {eq: "table.png"}) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        
 
       }
   `} render={(data) => (
@@ -177,6 +173,7 @@ const ProductsPage = () => (
             image={data.livingBiochar}
             name="Marin Hi-Test Living Biochar"
             description="Our Hi-Test Compost was amended with biochar to have 15% biochar by volume in the finished product. Since the biochar has been in process with the Hi-Test Compost, the biochar is now fully charged with microbes and nutrients. See below for further details on biochar."
+            price="$45 per cubic yard"
           />
           <CompostItem
             image={data.vineyardMulch}
@@ -188,13 +185,13 @@ const ProductsPage = () => (
             image={data.ultraLight}
             name="Ultra-Light Mulch"
             description="The hybrid mulch that has qualities of both compost and mulch will finish off any landscape just perfectly. Like any other mulch it stays on the surface of the soil and is not incorporated into the soil. While the mulch will initially act as a weed suppressant, as it breaks down it will help feed your soil. As the name implies, this mulch is lightweight and easy to work with. Landscapers specify Ultra-Light Mulch when a neat appearance or distinctive border is desired. Not recommended in windy areas."
-            price="$15 per cubic yard (20+: $13 per cubic yard)"
+            price="$15 per cubic yard"
           />
           <CompostItem
             image={data.treeMulch}
             name="Tree Mulch"
             description="It is derived from tree stumps and logs. Tree mulch provides the same overall benefits to the soil as the Vineyard Mulch. Due to its woodier nature it will last longer, but provide less nutrients. Offered screened Medium (<1.5”) or coarse (>1.5”)."
-            price="$15 per cubic yard (20+: $13 per cubic yard)"
+            price="$15 per cubic yard"
           />
           <CompostItem
             image={data.chunkyMulch}
@@ -206,7 +203,7 @@ const ProductsPage = () => (
             image={data.pathMulch}
             name="Marin Path Mulch"
             description="The economic, environment friendly substitute for expensive landscape barks. Made from recycled wood that’s ground and screened, Path Mulch is long-lasting walk-on mulch that will suppress weeds, conserve moisture and keep dirt and mud out of your house. It has a texture and color that work well with vivid garden colors. Landscapers specify Path Mulch when a neat appearance or distinctive border is desired."
-            price="$10 per cubic yard (20+: $9 per cubic yard)"
+            price="$10 per cubic yard"
           />
           <CompostItem
             image={data.deckMix}
@@ -218,7 +215,7 @@ const ProductsPage = () => (
             image={data.amendedSoil}
             name="Marin Amended Soil"
             description="Plant directly into Amended Soil. It’s great for filling raised beds, replacing poor quality soil, adding elevation or leveling a project site, or filling in behind a retaining wall. Amended Soil is a good-looking blend of clean soil and Mallard Plus. Since a high-quality topsoil is used, rather than a mined soil, no weed-free guarantees can be made."
-            price="$35 per cubic yard"
+            price="$45 per cubic yard"
           />
           <CompostItem
             image={data.biochar}
@@ -239,7 +236,7 @@ const ProductsPage = () => (
           />
 
           <h2 style={{ paddingTop: '1.5rem' }}>Product Disclaimer</h2>
-          <p className="text">Our current products are very clean. However, they are recycled materials, not virgin feestocks. Very small pieces of non-organics may be found.</p>
+          <p className="text">Our current products are compliant with state standards for physical contaminants. However, they are made from recycled materials, not virgin feedstocks. Very small pieces of non-organics may be found. All products are sold as is and all sales are final.</p>
           <h2 style={{ paddingTop: '1.5rem' }}>Cancellation/Refund Policy</h2>
           <p className="text">After you place an order you can always cancel at no cost as long as your delivery has not started yet. You will not be billed. Please cancel your orders no later than 2 hours before your scheduled delivery. West Marin Compost strives to have happy customers. If you are not satisfied please let us know. If the wrong product has been delivered, we will gladly replace the order with the right product. If our product did not perform as it should we will replace it or give you a refund. We will always evaluate the problem you report and do our best to find a solution.</p>
         </ProductsWrapper>
@@ -282,6 +279,6 @@ const ProductsWrapper = styled.div`
   #buttons {
     display:flex;
     justify-content:center;
-    align-item:center;
+    /* align-item:center; */
   }
 `
