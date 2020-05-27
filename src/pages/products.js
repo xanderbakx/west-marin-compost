@@ -140,6 +140,8 @@ const ProductsPage = () => (
         <ProductsWrapper>
           <p className="text">Please, browse this page to select the product that works best for your soil, your plants and you. You can refer to the table to estimate how much material you will need or you can use an <a id="calculator" href="https://www.savingwater.org/lawn-garden/soil-mulch-compost-fertilizers/compost-mulch-calculator/" target="_blank" rel="noopener noreferrer">online calculator</a> Of course, our knowledgeable staff is happy to assist you in deciding which product best suits your needs. <b>(415) 662-9849</b></p>
 
+          <p className="text">Compost is a soil amendment and should not be used by itself.  It is intended to improve soil properties such as water management, introduce a diverse microbial population, improve soil structure and enhance nutrient availability throughout the growing season.  It is not recommended to use compost by itself as a growing medium.</p>
+
           <Img src="data.table" style={{ maxWidth: 600, margin: '1rem auto 1.5rem auto' }} fluid={data.table.childImageSharp.fluid} />
 
           <h4>As of April 1, 2020 our prices will increase as follows:</h4>
@@ -166,7 +168,7 @@ const ProductsPage = () => (
           <CompostItem
             image={data.mallardPlus}
             name="Marin Mallard Plus"
-            description="All the benefits of Hi-Test Compost, but designed for use in poorly drained soils Mallard Plus is great for clay soils and raised beds."
+            description="All the benefits of Hi-Test Compost, but designed for use in poorly drained soils. Mallard Plus is great for clay soils and raised beds mixed with good garden soil."
             price="$34 per cubic yard"
           />
           <CompostItem

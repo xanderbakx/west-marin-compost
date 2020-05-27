@@ -7,15 +7,26 @@ import { styles } from '../../utils'
 import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 
+import greenWasteDay from '../../documents/2020_FINAL_MCFD_green_waste_day.pdf'
+import greenWasteImg from '../../images/green-waste-day-img.png'
+
+
 export default class QuickInfo extends Component {
   render() {
     return (
       <Section>
         <QuickInfoWrapper>
 
+          <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
+          <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
+          <h5><i>Marin Residents Only</i></h5>
+
+          <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a>
+
+          <hr />
 
           <h2>Organics Recycling: Good for the environment</h2>
-          <p className="text">Marin residents can drop off yard debris at West Marin Compost To avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch is is a valuable, much needed soil amendment that creates healthy soils:</p>
+          <p className="text">Marin residents can drop off yard debris at West Marin Compost to avoid landfilling.  Organic matter in landfills creates methane, a potent greenhouse gas. As compost or mulch it is a valuable, much needed soil amendment that creates healthy soils:</p>
           <ul>
             <li>Improve soil structure</li>
             <li>Conserve water</li>

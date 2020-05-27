@@ -6,14 +6,27 @@ import { styles } from '../../utils'
 // import { StaticQuery, graphql } from "gatsby"
 // import Img from 'gatsby-image'
 
+import greenWasteDay from '../../documents/2020_FINAL_MCFD_green_waste_day.pdf'
+import greenWasteImg from '../../images/green-waste-day-img.png'
+
+
 export default class DropOffContent extends Component {
   render() {
     return (
       <Section>
         <Title message="" title="Got Yard Debris?" />
         <DropOffContentWrapper>
+          <div id="greenWaste">
+            <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
+            <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
+            <h5><i>Marin Residents Only</i></h5>
+            <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a>
+          </div>
+
+          <hr />
+
           <h2>The green materials drop off site is open to the public:</h2>
-          <p className="text" style={{ fontWeight: 600 }}>Monday - Saturday from 7:00am to 3:00pm</p>
+          <p className="text" style={{ fontWeight: 600 }}>Monday - Saturday from 7:00am to 3:30pm</p>
           <p className="text" style={{ fontWeight: 600 }}>5575 Nicasio Valley Rd, Nicasio, CA 94946</p>
           <p className="text" style={{ fontWeight: 600 }}>(415) 662-9849</p>
 
@@ -95,5 +108,8 @@ const DropOffContentWrapper = styled.div`
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: ". ." ". ." ". ." ". ." ". ." ". .";
     grid-column-gap: 1rem;
-  }     
+  }  
+  #greenWaste {
+    text-align: center;
+  }   
 `
