@@ -20,6 +20,8 @@ export default class QuickInfo extends Component {
           <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
           <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
           <h5><i>Marin Residents Only</i></h5>
+          <h5><i>Residential Yard Debris Only</i></h5>
+          <h5>Hours: 9am - 4pm</h5>
 
           <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a>
 
