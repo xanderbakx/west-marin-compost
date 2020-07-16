@@ -7,8 +7,8 @@ import { styles } from '../../utils'
 import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-import greenWasteDay from '../../documents/2020_FINAL_MCFD_green_waste_day.pdf'
-import greenWasteImg from '../../images/green-waste-day-img.png'
+// import greenWasteDay from '../../documents/2020_FINAL_MCFD_green_waste_day.pdf'
+// import greenWasteImg from '../../images/green-waste-day-img.png'
 
 
 export default class QuickInfo extends Component {
@@ -16,14 +16,15 @@ export default class QuickInfo extends Component {
     return (
       <Section>
         <QuickInfoWrapper>
-
-          <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
+          <h2>Free Drop Off Program Has Ended</h2>
+          <p className="text">Due to the overwhelming response to the Free Green Waste Days for defensible space clearing at West Marin Compost – the facility is at capacity and cannot accept anymore material. We are sorry to have to CANCEL the last day. Please pass the word.</p>
+          {/* <h1 style={{ color: '#69bd45' }}>Free Green Waste Days</h1>
           <h3>June 6th &amp; 20th | July 11th &amp; 25th</h3>
           <h5><i>Marin Residents Only</i></h5>
           <h5><i>Residential Yard Debris Only</i></h5>
           <h5>Hours: 9am - 4pm</h5>
 
-          <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a>
+          <a href={greenWasteDay} target="_blank" rel="noopener noreferrer"><img src={greenWasteImg} alt="Green Waste" width="30%"></img></a> */}
 
           <hr />
 
